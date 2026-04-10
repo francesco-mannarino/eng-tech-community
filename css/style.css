@@ -270,6 +270,13 @@ button {
   transform: translateY(-7px) rotate(-45deg);
 }
 
+/* ── Nav Actions (lang + theme grouped) ───────────────────── */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 /* ── Language Toggle ────────────────────────────────────────── */
 .lang-toggle {
   background: transparent;
