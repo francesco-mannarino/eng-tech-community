@@ -26,9 +26,9 @@
       'footer.copy': '© 2026 ENG Tech Community. All rights reserved.',
 
       /* ── Home ─────────────────────────────────────────── */
-      'home.metaDesc':  'ENG Tech Community — Connecting people, sharing knowledge, building the future.',
+      'home.metaDesc':  'ENG Tech Community — Together, we elevate technology to make it closer and more relevant, every day.',
       'home.title':     'ENG Tech Community',
-      'home.heroTyping':'Connecting people, sharing knowledge, building the future.',
+      'home.heroTyping':'Together, we elevate technology to make it closer and more relevant, every day.',
       'home.heroCta':   'Iscriviti all\'evento',
       'home.heroCta.aria': 'Iscriviti all\'evento',
       'home.aboutTag':  'Who we are',
@@ -182,9 +182,9 @@
       'footer.copy': '© 2026 ENG Tech Community. Tutti i diritti riservati.',
 
       /* ── Home ─────────────────────────────────────────── */
-      'home.metaDesc':  'ENG Tech Community — Connettere le persone, condividere la conoscenza, costruire il futuro.',
+      'home.metaDesc':  'ENG Tech Community — Insieme, eleviamo la tecnologia per renderla più vicina e rilevante, ogni giorno.',
       'home.title':     'ENG Tech Community',
-      'home.heroTyping':'Connettere le persone, condividere la conoscenza, costruire il futuro.',
+      'home.heroTyping':'Insieme, eleviamo la tecnologia per renderla più vicina e rilevante, ogni giorno.',
       'home.heroCta':   'Iscriviti all\'evento',
       'home.heroCta.aria': 'Iscriviti all\'evento',
       'home.aboutTag':  'Chi siamo',

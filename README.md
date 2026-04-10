@@ -1,6 +1,6 @@
 # ENG Tech Community
 
-> *Connecting people, sharing knowledge, building the future.*
+> *Insieme, eleviamo la tecnologia per renderla più vicina e rilevante, ogni giorno.*
 
 ---
 
