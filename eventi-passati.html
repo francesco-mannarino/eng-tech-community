@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ENG Tech Community — Browse all past events, talks and workshops." />
+  <title>Past Events — ENG Tech Community</title>
+  <link rel="icon" type="image/svg+xml" href="logo/logo.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-i18n-page="events">
+
+  <!-- ── Page Loader ──────────────────────────────────────── -->
+  <div id="page-loader" role="status" aria-label="Loading page">
+    <div class="loader-ring"></div>
+  </div>
+
+  <!-- ── Mobile Nav Overlay ───────────────────────────────── -->
+  <div id="nav-overlay" style="display:none;position:fixed;inset:0;z-index:999;background:rgba(0,0,0,0.5);" aria-hidden="true"></div>
+
+  <!-- ── Navbar ───────────────────────────────────────────── -->
+  <header>
+    <nav id="navbar" aria-label="Main navigation">
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo" aria-label="ENG Tech Community — Home">
+          <img src="logo/logo.svg" alt="ENG Tech Community logo" width="40" height="40" />
+        </a>
+        <ul class="nav-links" role="list">
+          <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="eventi-passati.html" data-i18n="nav.pastEvents">Past Events</a></li>
+          <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        </ul>
+        <!-- Language Toggle -->
+        <button id="lang-toggle" class="lang-toggle" aria-label="Passa all'italiano" lang="en">EN</button>
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="theme-toggle" aria-label="Switch to light mode">
+          <svg id="theme-icon-sun" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg id="theme-icon-moon" aria-hidden="true" viewBox="0 0 24 24" style="display:none"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="hamburger" data-i18n-aria="nav.openMenu" aria-label="Open navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ── Page Hero ────────────────────────────────────────── -->
+    <section class="page-hero" aria-label="Page header">
+      <div class="page-hero-content">
+        <h1 class="page-hero-title" data-i18n-html="events.heroTitle">Past <span style="color:var(--eng-tech-pink);">Events</span></h1>
+        <p class="page-hero-sub" data-i18n="events.heroSub">All the talks, workshops and meetups from the community.</p>
+      </div>
+    </section>
+
+    <!-- ── Events Grid ──────────────────────────────────────── -->
+    <section aria-labelledby="events-heading">
+      <div class="section-inner">
+
+        <h2 id="events-heading" class="sr-only" data-i18n="events.list">Events list</h2>
+
+        <!-- Filter Bar -->
+        <div class="filter-bar reveal" role="group" data-i18n-aria="events.filter.aria" aria-label="Filter events by category">
+          <button class="filter-btn active" data-filter="all" aria-pressed="true" data-i18n="events.filter.all">All</button>
+          <button class="filter-btn" data-filter="ai-ml" aria-pressed="false" data-i18n="events.filter.aiml">AI / ML</button>
+          <button class="filter-btn" data-filter="devops" aria-pressed="false" data-i18n="events.filter.devops">DevOps</button>
+          <button class="filter-btn" data-filter="architecture" aria-pressed="false" data-i18n="events.filter.architecture">Architecture</button>
+          <button class="filter-btn" data-filter="frontend" aria-pressed="false" data-i18n="events.filter.frontend">Frontend</button>
+          <button class="filter-btn" data-filter="security" aria-pressed="false" data-i18n="events.filter.security">Security</button>
+        </div>
+
+        <!-- Cards -->
+        <div class="card-grid reveal-stagger" id="events-grid">
+
+          <!-- 1 -->
+          <article class="card event-card" data-category="ai-ml" data-i18n-aria="events.card1.aria" aria-label="GenAI in Production">
+            <span class="card-tag" data-i18n="events.card1.tag">AI / ML</span>
+            <p class="card-date" data-i18n="events.card1.date">March 14, 2025</p>
+            <h3 class="card-title" data-i18n="events.card1.title">GenAI in Production: Lessons from the Trenches</h3>
+            <p class="card-desc" data-i18n="events.card1.desc">
+              Real-world challenges when deploying large language models at enterprise scale —
+              latency, cost optimisation and hallucination mitigation strategies.
+            </p>
+          </article>
+
+          <!-- 2 -->
+          <article class="card event-card" data-category="devops" data-i18n-aria="events.card2.aria" aria-label="Platform Engineering">
+            <span class="card-tag" data-i18n="events.card2.tag">DevOps</span>
+            <p class="card-date" data-i18n="events.card2.date">February 6, 2025</p>
+            <h3 class="card-title" data-i18n="events.card2.title">Platform Engineering: Building the Golden Path</h3>
+            <p class="card-desc" data-i18n="events.card2.desc">
+              How our infra team built an Internal Developer Platform that cut time-to-deploy
+              from days to minutes and significantly improved developer happiness scores.
+            </p>
+          </article>
+
+          <!-- 3 -->
+          <article class="card event-card" data-category="architecture" data-i18n-aria="events.card3.aria" aria-label="Domain-Driven Design">
+            <span class="card-tag" data-i18n="events.card3.tag">Architecture</span>
+            <p class="card-date" data-i18n="events.card3.date">January 22, 2025</p>
+            <h3 class="card-title" data-i18n="events.card3.title">DDD in the Wild: Tactical Patterns That Actually Work</h3>
+            <p class="card-desc" data-i18n="events.card3.desc">
+              An honest retrospective on applying Domain-Driven Design to a legacy
+              monolith migration — including the trade-offs nobody on Medium talks about.
+            </p>
+          </article>
+
+          <!-- 4 -->
+          <article class="card event-card" data-category="frontend" data-i18n-aria="events.card4.aria" aria-label="Web Performance">
+            <span class="card-tag" data-i18n="events.card4.tag">Frontend</span>
+            <p class="card-date" data-i18n="events.card4.date">December 10, 2024</p>
+            <h3 class="card-title" data-i18n="events.card4.title">Web Performance at Scale: Core Web Vitals in Practice</h3>
+            <p class="card-desc" data-i18n="events.card4.desc">
+              Practical techniques to achieve green Core Web Vitals on high-traffic pages —
+              from image optimisation to edge rendering with modern frameworks.
+            </p>
+          </article>
+
+          <!-- 5 -->
+          <article class="card event-card" data-category="security" data-i18n-aria="events.card5.aria" aria-label="Zero Trust Architecture">
+            <span class="card-tag" data-i18n="events.card5.tag">Security</span>
+            <p class="card-date" data-i18n="events.card5.date">November 19, 2024</p>
+            <h3 class="card-title" data-i18n="events.card5.title">Zero Trust Architecture: Beyond the Buzzword</h3>
+            <p class="card-desc" data-i18n="events.card5.desc">
+              A practical implementation guide to Zero Trust networks, identity-aware
+              proxies and continuous verification in a hybrid cloud environment.
+            </p>
+          </article>
+
+          <!-- 6 -->
+          <article class="card event-card" data-category="ai-ml" data-i18n-aria="events.card6.aria" aria-label="MLOps Pipelines">
+            <span class="card-tag" data-i18n="events.card6.tag">AI / ML</span>
+            <p class="card-date" data-i18n="events.card6.date">October 8, 2024</p>
+            <h3 class="card-title" data-i18n="events.card6.title">MLOps Pipelines: From Notebook to Scalable Service</h3>
+            <p class="card-desc" data-i18n="events.card6.desc">
+              Step-by-step walkthrough of a production-grade ML pipeline: data versioning,
+              feature stores, model registry, A/B testing and automated retraining.
+            </p>
+          </article>
+
+          <!-- 7 -->
+          <article class="card event-card" data-category="devops" data-i18n-aria="events.card7.aria" aria-label="Kubernetes at Scale">
+            <span class="card-tag" data-i18n="events.card7.tag">DevOps</span>
+            <p class="card-date" data-i18n="events.card7.date">September 25, 2024</p>
+            <h3 class="card-title" data-i18n="events.card7.title">Kubernetes at Scale: Multi-Cluster Strategies</h3>
+            <p class="card-desc" data-i18n="events.card7.desc">
+              Lessons learned running Kubernetes across multiple regions and clouds —
+              cluster federation, service mesh trade-offs and cost control techniques.
+            </p>
+          </article>
+
+          <!-- 8 -->
+          <article class="card event-card" data-category="architecture" data-i18n-aria="events.card8.aria" aria-label="Event-Driven Architecture">
+            <span class="card-tag" data-i18n="events.card8.tag">Architecture</span>
+            <p class="card-date" data-i18n="events.card8.date">July 17, 2024</p>
+            <h3 class="card-title" data-i18n="events.card8.title">Event-Driven Architecture with Apache Kafka</h3>
+            <p class="card-desc" data-i18n="events.card8.desc">
+              A deep-dive into event sourcing, CQRS and saga patterns implemented on
+              Apache Kafka — including schema evolution and exactly-once semantics.
+            </p>
+          </article>
+
+          <!-- 9 -->
+          <article class="card event-card" data-category="frontend" data-i18n-aria="events.card9.aria" aria-label="Micro Frontends">
+            <span class="card-tag" data-i18n="events.card9.tag">Frontend</span>
+            <p class="card-date" data-i18n="events.card9.date">June 5, 2024</p>
+            <h3 class="card-title" data-i18n="events.card9.title">Micro Frontends: Scaling UI Without Losing Your Mind</h3>
+            <p class="card-desc" data-i18n="events.card9.desc">
+              How we decomposed a monolithic frontend into independently deployable modules
+              using Module Federation, while keeping a consistent design system.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ───────────────────────────────────────────── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" aria-label="ENG Tech Community home">
+          <img src="logo/logo.svg" alt="ENG Tech Community" loading="lazy" />
+        </a>
+        <p data-i18n="footer.copy">&copy; 2026 ENG Tech Community. All rights reserved.</p>
+      </div>
+      <nav aria-label="Social links">
+        <ul class="footer-social" role="list">
+          <li>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                   fill="currentColor" aria-hidden="true">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                   fill="currentColor" aria-hidden="true">
+                <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483
+                0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466
+                -.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832
+                .092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688
+                -.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115
+                2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595
+                1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012
+                2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link" aria-label="Twitter / X">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                   fill="currentColor" aria-hidden="true">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68
+                l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Filter button aria-pressed sync -->
+  <script>
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', function () {
+        document.querySelectorAll('.filter-btn').forEach(b => b.setAttribute('aria-pressed', 'false'));
+        this.setAttribute('aria-pressed', 'true');
+      });
+    });
+  </script>
+
+</body>
+</html>
