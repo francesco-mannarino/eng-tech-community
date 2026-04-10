@@ -45,9 +45,9 @@ Gli incontri si tengono presso la sede Engineering di Roma (Piazzale dell'Agrico
 
 La community è tenuta in vita da un gruppo di volontari:
 
-- **Francesco D'Amico** — Frontend Guild
-- **Francesco Mannarino** — Frontend Guild
-- **Andrea Raponi** — Frontend Guild
+- **Francesco D'Amico** — Technical Manager
+- **Francesco Mannarino** — Software Development Specialist
+- **Andrea Raponi** — IT Architecture Design Specialist
 
 ---
 
